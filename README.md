@@ -1,204 +1,283 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=34&duration=2500&pause=800&color=8B5E3C&center=true&vCenter=true&width=850&lines=Research+Paper+Assistant;AI-Powered+RAG+Research+Assistant;Ask+Questions.+Get+Grounded+Answers." alt="Research Paper Assistant Animation" />
-
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=2200&pause=700&color=A66A4C&center=true&vCenter=true&width=750&lines=Upload+Research+Papers;Retrieve+Relevant+Context;Generate+AI-Powered+Answers;Track+Document+%26+Page+Sources" alt="Feature Animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=700&size=38&duration=2800&pause=900&color=7A4E35&center=true&vCenter=true&width=900&height=70&lines=Research+Paper+Assistant" alt="Research Paper Assistant" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=19&duration=2600&pause=700&color=A56F52&center=true&vCenter=true&width=850&height=45&lines=AI-Powered+Research+%26+RAG+Assistant;Upload+Papers+%E2%80%A2+Ask+Questions+%E2%80%A2+Get+Grounded+Answers" alt="Project Subtitle" />
 
 <br><br>
 
 <a href="https://research-paper-assistant-gules.vercel.app/">
-<img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-8B5E3C?style=for-the-badge&labelColor=3B2A22" />
+<img src="https://img.shields.io/badge/%E2%9C%A6%20LIVE%20DEMO-7A4E35?style=for-the-badge&labelColor=2F211B" />
 </a>
 
-<img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge" />
-<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Groq-F55036?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+<a href="https://github.com/haniaeman2026-pixel/Research-Paper-Assistant">
+<img src="https://img.shields.io/badge/SOURCE%20CODE-9A684D?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
 <br><br>
 
-### 📚 Research Faster. Ask Smarter. Understand Better.
+<img src="https://img.shields.io/badge/Python-3.12-7A4E35?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" />
+<img src="https://img.shields.io/badge/LangGraph-5C4033?style=flat-square" />
+<img src="https://img.shields.io/badge/Groq-F55036?style=flat-square" />
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
 
-<p>
-An AI-powered research assistant that allows users to upload research papers,
+<br><br>
+
+> **Transform lengthy research papers into an interactive AI-powered knowledge experience.**
+
 <br>
-ask questions in natural language, and receive context-grounded answers
-<br>
-with document and page-level source information.
-</p>
 
 </div>
 
 ---
 
-# 📖 About The Project
-
-**Research Paper Assistant** is an AI-powered **Retrieval-Augmented Generation (RAG)** application built for interacting with research papers.
-
-Instead of manually searching through lengthy PDF documents, users can upload their research papers and ask questions directly.
-
-The application:
-
-
-📄 Upload Research Paper
-        ↓
-📖 Extract PDF Content
-        ↓
-✂️ Split Content into Chunks
-        ↓
-🔎 Retrieve Relevant Context
-        ↓
-🧩 LangGraph Workflow
-        ↓
-🤖 Groq LLM
-        ↓
-💬 Generate Grounded Answer
-        ↓
-📑 Show Document & Page Sources
-
-The assistant is designed to keep answers grounded in the uploaded research-paper content rather than intentionally relying on unrelated external information.
-
-✨ Features
 <div align="center">
-Feature	Description
-📄 PDF Upload	Upload research papers in PDF format
-📚 Multiple Papers	Supports multiple research documents
-🔎 Context Retrieval	Finds relevant content from uploaded papers
-🤖 AI Answers	Generates answers using Groq
-🧩 LangGraph Workflow	Structured retrieval and generation pipeline
-📑 Source Tracking	Shows document and page information
-🛡️ Grounded Responses	Answers are generated from retrieved paper context
-⚠️ Error Handling	Handles invalid files, empty questions and missing context
-☁️ Cloud Storage	Uses Vercel Blob for uploaded PDF storage
-🚀 Vercel Deployment	Production-ready cloud deployment
+
+## ✦  PROJECT OVERVIEW
+
 </div>
 
-🧠 RAG Architecture
+**Research Paper Assistant** is a research-focused AI application built around a **Retrieval-Augmented Generation (RAG)** workflow.
 
-The project follows a Retrieval-Augmented Generation workflow.
+It allows users to upload research papers in PDF format, ask questions in natural language, retrieve relevant content, and generate answers grounded in the uploaded research material.
 
-                         USER
-                          │
-                          ▼
-                ┌──────────────────┐
-                │   Upload PDF     │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │   PDF Parsing    │
-                │ PyPDF / PDFPlumber│
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │  Text Chunking   │
-                │    LangChain     │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │    Retrieval     │
-                │ Relevant Chunks  │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │    LangGraph     │
-                │ Workflow Routing │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │     Groq LLM     │
-                │ Answer Generation│
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │ Answer + Sources │
-                └──────────────────┘
-🔄 How The System Works
-1️⃣ Upload
+The application is designed to make long and information-heavy research papers easier to explore without manually searching through every page.
 
-The user uploads one or more research-paper PDFs.
+<br>
 
-2️⃣ Extract
-
-The application extracts text from the PDF using:
-
-PyPDF
-PDFPlumber
-3️⃣ Chunk
-
-Large amounts of extracted text are divided into manageable chunks using LangChain's text-splitting functionality.
-
-4️⃣ Retrieve
-
-When a user asks a question, relevant chunks from the uploaded research content are retrieved.
-
-5️⃣ Check Relevance
-
-LangGraph evaluates whether relevant research context is available.
-
-             User Question
-                   │
-                   ▼
-              Retrieval
-                   │
-                   ▼
-           Relevance Check
-             /          \
-           YES            NO
-            │              │
-            ▼              ▼
-       Prepare Context   Fallback
-            │
-            ▼
-       Generate Answer
-6️⃣ Generate
-
-Relevant context is passed to the Groq-powered LLM.
-
-The model is instructed to:
-
-Use only the supplied research context
-Avoid unsupported claims
-Avoid guessing
-Avoid inventing information
-Return a fallback when the required information is unavailable
-
-7️⃣ Sources
-
-The application returns source information associated with the retrieved content, including:
-
-📄 Document name
-📑 Page number
-🛠️ Technology Stack
 <div align="center">
-Technology	Role
-🐍 Python	Core programming language
-⚡ FastAPI	Backend API framework
+
+
+   📄 UPLOAD
+      │
+      ▼
+   📖 EXTRACT
+      │
+      ▼
+   ✂️ CHUNK
+      │
+      ▼
+   🔎 RETRIEVE
+      │
+      ▼
+   🧩 LANGGRAPH
+      │
+      ▼
+   🤖 GROQ
+      │
+      ▼
+   💬 ANSWER
+      │
+      ▼
+   📑 SOURCES
+</div>
+<div align="center">
+✦ WHY THIS PROJECT?
+</div>
+
+Research papers can contain dozens of pages of dense technical information.
+
+Instead of repeatedly searching through PDFs, this application provides a conversational interface where users can ask questions directly.
+
+The core idea
+
+Upload the paper → Ask a question → Retrieve relevant context → Generate a grounded answer.
+
+This creates a more direct workflow for exploring research material.
+
+<div align="center">
+✦ KEY FEATURES
+</div> <table> <tr> <td width="50%" valign="top">
+        
+📄 Research Paper Processing
+PDF document upload
+PDF validation
+Text extraction
+Multiple research-paper support
+Empty-file handling
+Unsupported-format handling
+</td> <td width="50%" valign="top">
+🔎 Context Retrieval
+Relevant content retrieval
+Text chunking
+Research-focused context
+Document metadata
+Page-level information
+</td> </tr> <tr> <td width="50%" valign="top">
+🤖 AI Question Answering
+Natural-language questions
+Groq-powered generation
+Context-grounded answers
+Controlled generation
+Fallback responses
+</td> <td width="50%" valign="top">
+🧩 LangGraph Workflow
+Retrieval node
+Relevance checking
+Context preparation
+Answer generation
+Fallback routing
+</td> </tr> <tr> <td width="50%" valign="top">
+☁️ Cloud Deployment
+FastAPI backend
+Vercel deployment
+Vercel Blob storage
+Production API
+</td> <td width="50%" valign="top">
+📑 Source Awareness
+Source document
+Page information
+Retrieved content
+Research-focused responses
+</td> </tr> </table>
+<div align="center">
+✦ RAG ARCHITECTURE
+</div>
+╭────────────────────────────────────────────────────────╮
+│                 RESEARCH PAPER PDF                     │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                    PDF PROCESSING                      │
+│              PyPDF  •  PDFPlumber                     │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                    TEXT CHUNKING                       │
+│                     LangChain                          │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                    RETRIEVAL                           │
+│              Relevant Research Context                 │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                    LANGGRAPH                           │
+│         Retrieve → Check → Prepare → Generate          │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                      GROQ                              │
+│                 LLM Answer Generation                  │
+╰──────────────────────────┬─────────────────────────────╯
+                           │
+                           ▼
+╭────────────────────────────────────────────────────────╮
+│                 FINAL RESPONSE                         │
+│            Answer + Document + Page                    │
+╰────────────────────────────────────────────────────────╯
+<div align="center">
+✦ HOW IT WORKS
+</div>
+01 — Upload
+
+The user uploads one or more research papers in PDF format.
+
+↓
+
+02 — Extract
+
+The application extracts readable text from the uploaded PDF using PyPDF and PDFPlumber.
+
+↓
+
+03 — Chunk
+
+Extracted text is divided into smaller sections using LangChain text-splitting functionality.
+
+↓
+
+04 — Retrieve
+
+When the user asks a question, relevant research content is retrieved from the indexed document content.
+
+↓
+
+05 — Validate Context
+
+LangGraph checks whether relevant context is available before generating an answer.
+
+↓
+
+06 — Generate
+
+The retrieved context is passed to the Groq LLM, which generates a response based on the supplied research content.
+
+↓
+
+07 — Return Sources
+
+The application returns source information associated with the retrieved research content, including document and page metadata.
+
+<div align="center">
+✦ LANGGRAPH WORKFLOW
+</div>
+                    ┌─────────────────┐
+                    │  USER QUESTION  │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │    RETRIEVE     │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ CHECK RELEVANCE │
+                    └────────┬────────┘
+                             │
+                    ┌────────┴────────┐
+                    │                 │
+                  YES                 NO
+                    │                 │
+                    ▼                 ▼
+          ┌─────────────────┐  ┌─────────────────┐
+          │ PREPARE CONTEXT │  │    FALLBACK     │
+          └────────┬────────┘  └─────────────────┘
+                   │
+                   ▼
+          ┌─────────────────┐
+          │  GENERATE ANSWER│
+          └────────┬────────┘
+                   │
+                   ▼
+          ┌─────────────────┐
+          │ FINAL RESPONSE  │
+          └─────────────────┘
+<div align="center">
+        
+✦ TECHNOLOGY STACK
+</div>
+Technology	Purpose
+🐍 Python	Core application development
+⚡ FastAPI	Backend REST API
 📄 PyPDF	PDF text extraction
 📑 PDFPlumber	PDF processing
 🔗 LangChain	Document processing & text splitting
-🧩 LangGraph	Workflow orchestration
+🧩 LangGraph	AI workflow orchestration
 🤖 Groq	LLM inference
 🧠 GPT OSS 20B	Answer generation
-☁️ Vercel	Deployment
+☁️ Vercel	Cloud deployment
 🗄️ Vercel Blob	PDF cloud storage
-🎨 HTML/CSS/JavaScript	Frontend
+🎨 HTML / CSS / JavaScript	Frontend interface
 🔬 LangSmith	Optional tracing & observability
+<div align="center">
+✦ PROJECT STRUCTURE
 </div>
 
-📁 Project Structure
 Research-Paper-Assistant/
 │
-├── app/
+├── 📁 app/
 │   ├── __init__.py
 │   ├── main.py
 │   ├── config.py
@@ -209,41 +288,48 @@ Research-Paper-Assistant/
 │   ├── llm.py
 │   └── blob_storage.py
 │
-├── api/
+├── 📁 api/
 │   └── index.py
 │
-├── static/
+├── 📁 static/
 │   ├── style.css
 │   └── app.js
 │
-├── templates/
+├── 📁 templates/
 │   └── index.html
 │
-├── uploads/
+├── 📁 uploads/
 │
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
-⚙️ Installation
-1. Clone Repository
+<div align="center">
+        
+✦ INSTALLATION
+</div>
+01 — Clone
 git clone https://github.com/haniaeman2026-pixel/Research-Paper-Assistant.git
-3. Enter Project Directory
+02 — Open Project
 cd Research-Paper-Assistant
-4. Create Virtual Environment
+03 — Create Virtual Environment
 python -m venv venv
-5. Activate Environment
-Windows PowerShell
+04 — Activate Environment
+
+PowerShell
+
 .\venv\Scripts\Activate.ps1
-Windows CMD
+
+CMD
+
 venv\Scripts\activate.bat
-6. Install Dependencies
+05 — Install Dependencies
 python -m pip install -r requirements.txt
+<div align="center">
+✦ ENVIRONMENT CONFIGURATION
+</div>
 
-🔐 Environment Variables
-
-Create a .env file in the project root.
+Create a .env file in the project root:
 
 GROQ_API_KEY=your_groq_api_key
 GROQ_MODEL=openai/gpt-oss-20b
@@ -252,211 +338,188 @@ LANGSMITH_TRACING=false
 LANGSMITH_API_KEY=your_langsmith_api_key
 LANGSMITH_PROJECT=research-paper-assistant
 
-For Vercel Blob, configure the required Blob environment variable through the Vercel project environment settings.
+For Vercel Blob, configure the required Blob environment variable through your Vercel project settings.
 
-⚠️ Never commit .env, API keys, tokens, or other secrets to GitHub.
+🔐 Never commit .env, API keys, access tokens, or other secrets to GitHub.
 
-▶️ Run Locally
+<div align="center">
+✦ RUN LOCALLY
+</div>
 
-Start the FastAPI server:
+Start the application:
 
 python -m uvicorn app.main:app --port 8001
 
 Open:
 
 http://127.0.0.1:8001
-🔌 API Endpoints
-Method	Endpoint	Purpose
-GET	/	Main web application
-GET	/api/health	Application health check
-POST	/api/upload	Upload and process PDFs
-POST	/api/ask	Ask questions about research papers
-Health Check
-GET /api/health
-
-Example:
-
+<div align="center">
+✦ API ENDPOINTS
+</div>
+Method	Endpoint	Description
+GET	/	Main application
+GET	/api/health	Health check
+POST	/api/upload	Upload & process PDFs
+POST	/api/ask	Ask research questions
+Health Response
 {
   "status": "online",
   "service": "Research Paper Assistant",
   "version": "1.0.0"
 }
-💬 Example Questions
+<div align="center">
+✦ EXAMPLE QUESTIONS
+</div>
+"What is the main objective of this research?"
 
-After uploading a research paper, users can ask:
+"What methodology does the paper use?"
 
-What is the main objective of this research?
+"What dataset was used?"
 
-What methodology does the paper use?
+"What are the major findings?"
 
-What dataset was used?
+"What limitations are mentioned?"
 
-What are the major findings?
+"What future work is suggested?"
 
-What limitations are mentioned?
+"What algorithm or architecture is discussed?"
+<div align="center">
+✦ GROUNDED AI RESPONSES
+</div>
 
-What future work is suggested?
+The assistant is designed around a strict context-based generation strategy.
 
-What algorithm or architecture is discussed?
-🛡️ Grounded AI Responses
+Research Paper
+      │
+      ▼
+Relevant Context
+      │
+      ▼
+┌───────────────┐
+│    GROQ LLM   │
+└───────┬───────┘
+        │
+        ▼
+Context-Grounded
+     Answer
 
-The assistant uses a strict context-based generation strategy.
+The generation layer is instructed to:
 
-┌──────────────────────────┐
-│    Research Paper        │
-└────────────┬─────────────┘
-             │
-             ▼
-      Relevant Context
-             │
-             ▼
-      ┌──────────────┐
-      │   Groq LLM   │
-      └──────┬───────┘
-             │
-             ▼
-     Context-Grounded
-          Answer
+Use the supplied research context
+Avoid unsupported claims
+Avoid guessing
+Avoid fabricated citations
+Avoid unrelated information
+Return a fallback when required information is unavailable
 
-The generation prompt instructs the model to avoid:
-
-❌ Unsupported facts
-❌ Guessing
-❌ Fabricated citations
-❌ Information outside the provided context
-
-If the requested information is not available in the retrieved research context, the application returns:
+When the requested information cannot be found in the available research context:
 
 The answer is not available in the uploaded research papers.
-⚠️ Error Handling
-
-The application handles:
-
-❌ No PDF uploaded
-❌ Unsupported file format
-❌ Empty uploaded file
-❌ Empty user question
-❌ No relevant research context
-❌ PDF processing errors
-❌ Missing API configuration
-❌ AI generation errors
-❌ Duplicate Blob filenames
-
-This provides a more controlled user experience during document processing and question answering.
-
-☁️ Deployment
-
-The application is deployed on Vercel.
-
 <div align="center">
-🚀 Live Application
-<a href="https://research-paper-assistant-gules.vercel.app/"> <img src="https://img.shields.io/badge/OPEN%20LIVE%20APP-Research%20Paper%20Assistant-8B5E3C?style=for-the-badge&logo=vercel&logoColor=white" /> </a>
+✦ ERROR HANDLING
+</div>
+
+The application handles common scenarios such as:
+
+╭────────────────────────────────────╮
+│ ❌ No PDF uploaded                 │
+│ ❌ Unsupported file format         │
+│ ❌ Empty uploaded file             │
+│ ❌ Empty question                  │
+│ ❌ No relevant context             │
+│ ❌ PDF processing failure          │
+│ ❌ Missing API configuration       │
+│ ❌ AI generation failure           │
+│ ❌ Duplicate Blob filename         │
+╰────────────────────────────────────╯
+<div align="center">
+✦ LIVE DEPLOYMENT
+<br> <a href="https://research-paper-assistant-gules.vercel.app/"> <img src="https://img.shields.io/badge/%E2%9C%A6%20OPEN%20LIVE%20APPLICATION-7A4E35?style=for-the-badge&logo=vercel&logoColor=white" /> </a>
 
 <br><br>
 
-<a href="https://research-paper-assistant-gules.vercel.app/">
+Production URL
 
+<br>
 https://research-paper-assistant-gules.vercel.app/
+</div>
+<div align="center">
+✦ DEPLOYMENT
+</div>
 
-</a> </div>
-Production Deployment
+The application is deployed using Vercel.
+
+Production deployment:
+
 vercel --prod
 
-The application uses Vercel Blob for cloud storage of uploaded research PDFs.
+Uploaded research papers are stored using Vercel Blob.
 
-📊 Application Workflow
-┌──────────────────────────────────────────────┐
-│              RESEARCH PAPER                 │
-│                   PDF                        │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│              PDF PROCESSING                 │
-│         PyPDF + PDFPlumber                  │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│               TEXT CHUNKING                 │
-│                 LangChain                   │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│                RETRIEVAL                    │
-│         Relevant Research Content           │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│                LANGGRAPH                    │
-│       Retrieve → Check → Generate           │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│                  GROQ                       │
-│              LLM Generation                 │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│             FINAL RESPONSE                  │
-│        Answer + Document + Page             │
-└──────────────────────────────────────────────┘
-🎯 Project Goals
-
-The project was designed around the following goals:
-
-📚 Make research papers easier to explore
-🔎 Reduce manual searching through long PDFs
-🤖 Provide AI-assisted research interaction
-🧠 Apply Retrieval-Augmented Generation concepts
-🧩 Implement structured AI workflows with LangGraph
-📑 Maintain document/page source awareness
-☁️ Deploy an AI application to the cloud
-🚀 Future Improvements
-
-Potential future enhancements include:
-
-🧠 Semantic embedding-based retrieval
-🔢 Vector similarity search
-🗄️ Persistent vector database
-📚 Improved multi-document retrieval
-🔗 More precise citation mapping
-💬 Conversation memory
-⚡ Streaming responses
-📊 Retrieval evaluation
-🔬 Advanced LangSmith tracing
-🔐 User authentication
-📈 Research analytics
-🎓 What This Project Demonstrates
-
-This project demonstrates practical experience with:
-
-🐍 Python
-⚡ FastAPI
-🤖 Large Language Models
-🧠 Retrieval-Augmented Generation
-🔗 LangChain
-🧩 LangGraph
-📄 PDF Processing
-✂️ Text Chunking
-🔎 Information Retrieval
-📝 Prompt Engineering
-☁️ Cloud Deployment
-🗄️ Cloud Storage
-🔌 REST APIs
-
-👩‍💻 Developer
-<div align="center"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5E3C&center=true&vCenter=true&width=650&lines=Developed+by+Hania+Eman;AI+%26+Data+Science+Student;ML+Developer+%7C+Python+Enthusiast" alt="Developer Animation" /> <br> <a href="https://github.com/haniaeman2026-pixel"> <img src="https://img.shields.io/badge/GitHub-Hania%20Eman-181717?style=for-the-badge&logo=github&logoColor=white" /> </a> </div>
 <div align="center">
-⭐ Research Paper Assistant
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1000&color=8B5E3C&center=true&vCenter=true&width=700&lines=Upload.+Retrieve.+Understand.;Built+with+Python+%7C+FastAPI+%7C+LangChain;Powered+by+LangGraph+%26+Groq;Designed+for+Research-Focused+AI+Workflows" alt="Footer Animation" />
+✦ PROJECT GOALS
+</div>
+📚 Simplify Research Paper Exploration
+
+🔎 Reduce Manual PDF Searching
+
+🤖 Apply AI to Research Workflows
+
+🧠 Demonstrate RAG Concepts
+
+🧩 Build Structured LLM Workflows
+
+📑 Preserve Source Awareness
+
+☁️ Deploy an AI Application to the Cloud
+<div align="center">
+✦ FUTURE IMPROVEMENTS
+</div>
+
+Planned Enhancement	Goal
+🧠 Semantic Retrieval	Improve contextual matching
+🔢 Embeddings	Enable similarity-based retrieval
+🗄️ Vector Database	Persistent retrieval storage
+📚 Advanced Multi-Document Search	Improve cross-paper retrieval
+🔗 Citation Mapping	More precise source references
+💬 Conversation Memory	Maintain chat context
+⚡ Streaming Responses	Improve response experience
+📊 Retrieval Evaluation	Measure retrieval quality
+🔬 LangSmith Observability	Advanced tracing
+🔐 Authentication	Secure user access
+<div align="center">
+
+✦ SKILLS DEMONSTRATED
+</div> <p align="center">
+
+Python · FastAPI · RAG · LLMs · LangChain · LangGraph
+<br>
+Prompt Engineering · PDF Processing · REST APIs
+<br>
+Cloud Deployment · Vercel Blob · AI Application Architecture
+
+</p>
+<div align="center">
+✦ DEVELOPER
+<br> <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=700&size=27&duration=2600&pause=1000&color=7A4E35&center=true&vCenter=true&width=650&height=55&lines=Developed+by+Hania+Eman" alt="Developer" /> <br> <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=17&duration=2400&pause=900&color=A56F52&center=true&vCenter=true&width=650&height=40&lines=AI+%26+Data+Science+Student;ML+Developer+%7C+Python+Enthusiast" alt="Developer Role" />
+
+<br><br>
+
+<a href="https://github.com/haniaeman2026-pixel"> <img src="https://img.shields.io/badge/GitHub-Hania%20Eman-2F211B?style=for-the-badge&logo=github&logoColor=white" /> </a> </div>
+<div align="center"> <br> <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=600&size=22&duration=2600&pause=900&color=7A4E35&center=true&vCenter=true&width=750&height=45&lines=Research+Smarter.+Understand+Faster.;Built+for+Research-Focused+AI+Workflows." alt="Closing Animation" />
+
+<br><br>
+
+Research Paper Assistant
+
+<br>
+
+Python · FastAPI · LangChain · LangGraph · Groq · Vercel
 
 <br><br>
 
 Developed by Hania Eman
 
+<br><br>
+
 </div> ```
+
