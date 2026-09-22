@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research Paper Assistant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="page">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <span>R</span>
+                </div>
+
+                <div>
+                    <div class="brand-name">
+                        ResearchAI
+                    </div>
+
+                    <div class="brand-subtitle">
+                        Paper Intelligence
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                SYSTEM ONLINE
+            </div>
+
+        </nav>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span>✦</span>
+                AI-POWERED RESEARCH
+            </div>
+
+            <h1>
+                Research, understood
+                <span>simply.</span>
+            </h1>
+
+            <p>
+                Upload your research papers and ask intelligent questions
+                with answers grounded strictly in your documents.
+            </p>
+
+        </section>
+
+
+        <!-- WORKSPACE -->
+        <section class="workspace">
+
+
+            <!-- UPLOAD -->
+            <div class="upload-card">
+
+                <div class="card-top">
+
+                    <div class="card-title-area">
+
+                        <div class="title-icon">
+                            ↑
+                        </div>
+
+                        <div>
+                            <h2>
+                                Research Library
+                            </h2>
+
+                            <p>
+                                Add your research papers
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="pdf-label">
+                        PDF ONLY
+                    </div>
+
+                </div>
+
+
+                <label
+                    class="drop-zone"
+                    id="dropZone"
+                    for="fileInput"
+                >
+
+                    <div class="drop-icon">
+
+                        <svg
+                            width="27"
+                            height="27"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                        >
+
+                            <path d="M12 16V4"></path>
+
+                            <path d="m7 9 5-5 5 5"></path>
+
+                            <path d="M5 20h14"></path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <h3>
+                        Drop your papers here
+                    </h3>
+
+
+                    <p>
+                        or
+                        <span>
+                            browse files
+                        </span>
+                    </p>
+
+
+                    <small>
+                        Multiple PDF files supported
+                    </small>
+
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept=".pdf,application/pdf"
+                        multiple
+                        hidden
+                    >
+
+                </label>
+
+
+                <div
+                    id="fileList"
+                    class="file-list"
+                ></div>
+
+
+                <button
+                    id="uploadBtn"
+                    class="primary-btn"
+                    type="button"
+                >
+
+                    <span class="btn-icon">
+                        ✦
+                    </span>
+
+                    Index Research Papers
+
+                </button>
+
+
+                <div
+                    id="uploadStatus"
+                    class="status"
+                ></div>
+
+            </div>
+
+
+            <!-- CHAT -->
+            <div class="chat-card">
+
+                <div class="chat-top">
+
+                    <div class="chat-title-row">
+
+                        <div class="ai-orb">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Ask Your Papers
+                            </h2>
+
+                            <p>
+                                Document-grounded AI assistant
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-actions">
+
+                        <button
+                            id="clearChatBtn"
+                            class="clear-btn"
+                            type="button"
+                        >
+                            Clear
+                        </button>
+
+
+                        <div class="rag-pill">
+
+                            <span></span>
+
+                            RAG ACTIVE
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CHAT AREA -->
+                <div
+                    id="chatMessages"
+                    class="chat-messages"
+                >
+
+                    <div class="welcome-message">
+
+                        <div class="welcome-orb">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Your papers are ready to talk.
+                        </h3>
+
+                        <p>
+                            Upload a research paper and ask
+                            questions about its content.
+                        </p>
+
+
+                        <div class="suggestions">
+
+                            <button
+                                type="button"
+                                class="suggestion"
+                                data-question="Summarize this research paper."
+                            >
+
+                                <span>✦</span>
+
+                                Summarize paper
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="suggestion"
+                                data-question="What methodology or architecture does the paper propose?"
+                            >
+
+                                <span>⌁</span>
+
+                                Explain methodology
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="suggestion"
+                                data-question="What are the key findings of the paper?"
+                            >
+
+                                <span>◈</span>
+
+                                Key findings
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INPUT -->
+                <div class="question-area">
+
+                    <div class="input-wrapper">
+
+                        <textarea
+                            id="questionInput"
+                            rows="1"
+                            placeholder="Ask anything about your uploaded papers..."
+                        ></textarea>
+
+
+                        <button
+                            id="askBtn"
+                            class="send-btn"
+                            type="button"
+                            aria-label="Ask question"
+                        >
+
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+
+                                <path d="M22 2 11 13"></path>
+
+                                <path d="m22 2-7 20-4-9-9-4Z"></path>
+
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="input-hint">
+
+                        <span>Enter</span>
+                        to send
+
+                        <span class="divider">
+                            •
+                        </span>
+
+                        <span>Shift + Enter</span>
+                        for new line
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGY -->
+        <section class="tech-strip">
+
+            <span>POWERED BY</span>
+
+            <div class="tech-item">
+                LangChain
+            </div>
+
+            <div class="tech-item">
+                LangGraph
+            </div>
+
+            <div class="tech-item">
+                ChromaDB
+            </div>
+
+            <div class="tech-item">
+                Groq
+            </div>
+
+            <div class="tech-item">
+                FastAPI
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div>
+                ResearchAI · Grounded research assistant
+            </div>
+
+            <div class="developer">
+                Developed by
+                <strong>
+                    Hania Eman
+                </strong>
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+pypdf
+pdfplumber
+langchain
+langchain-core
+langchain-text-splitters
+langgraph
+langsmith
+groq
+vercel
