@@ -4,6 +4,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=700&size=38&duration=2800&pause=900&color=7A4E35&center=true&vCenter=true&width=900&height=70&lines=Research+Paper+Assistant" alt="Research Paper Assistant" />
 
+<br>
+
 <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=19&duration=2600&pause=700&color=A56F52&center=true&vCenter=true&width=850&height=45&lines=AI-Powered+Research+%26+RAG+Assistant;Upload+Papers+%E2%80%A2+Ask+Questions+%E2%80%A2+Get+Grounded+Answers" alt="Project Subtitle" />
 
 <br><br>
@@ -11,6 +13,8 @@
 <a href="https://research-paper-assistant-gules.vercel.app/">
 <img src="https://img.shields.io/badge/%E2%9C%A6%20LIVE%20DEMO-7A4E35?style=for-the-badge&labelColor=2F211B" />
 </a>
+
+&nbsp;
 
 <a href="https://github.com/haniaeman2026-pixel/Research-Paper-Assistant">
 <img src="https://img.shields.io/badge/SOURCE%20CODE-9A684D?style=for-the-badge&logo=github&logoColor=white" />
@@ -37,7 +41,7 @@
 
 <div align="center">
 
-## ✦  PROJECT OVERVIEW
+## ✦ PROJECT OVERVIEW
 
 </div>
 
@@ -52,28 +56,28 @@ The application is designed to make long and information-heavy research papers e
 <div align="center">
 
 
-   📄 UPLOAD
-      │
-      ▼
-   📖 EXTRACT
-      │
-      ▼
-   ✂️ CHUNK
-      │
-      ▼
-   🔎 RETRIEVE
-      │
-      ▼
-   🧩 LANGGRAPH
-      │
-      ▼
-   🤖 GROQ
-      │
-      ▼
-   💬 ANSWER
-      │
-      ▼
-   📑 SOURCES
+📄 UPLOAD
+    │
+    ▼
+📖 EXTRACT
+    │
+    ▼
+✂️ CHUNK
+    │
+    ▼
+🔎 RETRIEVE
+    │
+    ▼
+🧩 LANGGRAPH
+    │
+    ▼
+🤖 GROQ
+    │
+    ▼
+💬 ANSWER
+    │
+    ▼
+📑 SOURCES
 </div>
 <div align="center">
 ✦ WHY THIS PROJECT?
@@ -83,16 +87,16 @@ Research papers can contain dozens of pages of dense technical information.
 
 Instead of repeatedly searching through PDFs, this application provides a conversational interface where users can ask questions directly.
 
-The core idea
+The Core Idea
 
 Upload the paper → Ask a question → Retrieve relevant context → Generate a grounded answer.
 
 This creates a more direct workflow for exploring research material.
 
+<br>
 <div align="center">
 ✦ KEY FEATURES
 </div> <table> <tr> <td width="50%" valign="top">
-        
 📄 Research Paper Processing
 PDF document upload
 PDF validation
@@ -133,7 +137,7 @@ Source document
 Page information
 Retrieved content
 Research-focused responses
-</td> </tr> </table>
+</td> </tr> </table> <br>
 <div align="center">
 ✦ RAG ARCHITECTURE
 </div>
@@ -144,7 +148,7 @@ Research-focused responses
                            ▼
 ╭────────────────────────────────────────────────────────╮
 │                    PDF PROCESSING                      │
-│              PyPDF  •  PDFPlumber                     │
+│               PyPDF  •  PDFPlumber                     │
 ╰──────────────────────────┬─────────────────────────────╯
                            │
                            ▼
@@ -155,13 +159,13 @@ Research-focused responses
                            │
                            ▼
 ╭────────────────────────────────────────────────────────╮
-│                    RETRIEVAL                           │
+│                     RETRIEVAL                          │
 │              Relevant Research Context                 │
 ╰──────────────────────────┬─────────────────────────────╯
                            │
                            ▼
 ╭────────────────────────────────────────────────────────╮
-│                    LANGGRAPH                           │
+│                    LANGGRAPH                            │
 │         Retrieve → Check → Prepare → Generate          │
 ╰──────────────────────────┬─────────────────────────────╯
                            │
@@ -173,9 +177,10 @@ Research-focused responses
                            │
                            ▼
 ╭────────────────────────────────────────────────────────╮
-│                 FINAL RESPONSE                         │
-│            Answer + Document + Page                    │
+│                  FINAL RESPONSE                        │
+│             Answer + Document + Page                   │
 ╰────────────────────────────────────────────────────────╯
+<br>
 <div align="center">
 ✦ HOW IT WORKS
 </div>
@@ -219,6 +224,7 @@ The retrieved context is passed to the Groq LLM, which generates a response base
 
 The application returns source information associated with the retrieved research content, including document and page metadata.
 
+<br>
 <div align="center">
 ✦ LANGGRAPH WORKFLOW
 </div>
@@ -254,8 +260,8 @@ The application returns source information associated with the retrieved researc
           ┌─────────────────┐
           │ FINAL RESPONSE  │
           └─────────────────┘
+<br>
 <div align="center">
-        
 ✦ TECHNOLOGY STACK
 </div>
 Technology	Purpose
@@ -271,10 +277,10 @@ Technology	Purpose
 🗄️ Vercel Blob	PDF cloud storage
 🎨 HTML / CSS / JavaScript	Frontend interface
 🔬 LangSmith	Optional tracing & observability
+<br>
 <div align="center">
 ✦ PROJECT STRUCTURE
 </div>
-
 Research-Paper-Assistant/
 │
 ├── 📁 app/
@@ -304,11 +310,11 @@ Research-Paper-Assistant/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+<br>
 <div align="center">
-        
 ✦ INSTALLATION
 </div>
-01 — Clone
+01 — Clone Repository
 git clone https://github.com/haniaeman2026-pixel/Research-Paper-Assistant.git
 02 — Open Project
 cd Research-Paper-Assistant
@@ -325,6 +331,7 @@ CMD
 venv\Scripts\activate.bat
 05 — Install Dependencies
 python -m pip install -r requirements.txt
+<br>
 <div align="center">
 ✦ ENVIRONMENT CONFIGURATION
 </div>
@@ -342,6 +349,7 @@ For Vercel Blob, configure the required Blob environment variable through your V
 
 🔐 Never commit .env, API keys, access tokens, or other secrets to GitHub.
 
+<br>
 <div align="center">
 ✦ RUN LOCALLY
 </div>
@@ -353,6 +361,7 @@ python -m uvicorn app.main:app --port 8001
 Open:
 
 http://127.0.0.1:8001
+<br>
 <div align="center">
 ✦ API ENDPOINTS
 </div>
@@ -367,6 +376,7 @@ Health Response
   "service": "Research Paper Assistant",
   "version": "1.0.0"
 }
+<br>
 <div align="center">
 ✦ EXAMPLE QUESTIONS
 </div>
@@ -383,6 +393,7 @@ Health Response
 "What future work is suggested?"
 
 "What algorithm or architecture is discussed?"
+<br>
 <div align="center">
 ✦ GROUNDED AI RESPONSES
 </div>
@@ -415,6 +426,7 @@ Return a fallback when required information is unavailable
 When the requested information cannot be found in the available research context:
 
 The answer is not available in the uploaded research papers.
+<br>
 <div align="center">
 ✦ ERROR HANDLING
 </div>
@@ -432,6 +444,7 @@ The application handles common scenarios such as:
 │ ❌ AI generation failure           │
 │ ❌ Duplicate Blob filename         │
 ╰────────────────────────────────────╯
+<br>
 <div align="center">
 ✦ LIVE DEPLOYMENT
 <br> <a href="https://research-paper-assistant-gules.vercel.app/"> <img src="https://img.shields.io/badge/%E2%9C%A6%20OPEN%20LIVE%20APPLICATION-7A4E35?style=for-the-badge&logo=vercel&logoColor=white" /> </a>
@@ -440,21 +453,23 @@ The application handles common scenarios such as:
 
 Production URL
 
-<br>
+<br> <a href="https://research-paper-assistant-gules.vercel.app/">
+
 https://research-paper-assistant-gules.vercel.app/
-</div>
+
+</a> </div> <br>
 <div align="center">
 ✦ DEPLOYMENT
 </div>
 
 The application is deployed using Vercel.
 
-Production deployment:
-
+Production Deployment
 vercel --prod
 
 Uploaded research papers are stored using Vercel Blob.
 
+<br>
 <div align="center">
 ✦ PROJECT GOALS
 </div>
@@ -471,10 +486,10 @@ Uploaded research papers are stored using Vercel Blob.
 📑 Preserve Source Awareness
 
 ☁️ Deploy an AI Application to the Cloud
+<br>
 <div align="center">
 ✦ FUTURE IMPROVEMENTS
 </div>
-
 Planned Enhancement	Goal
 🧠 Semantic Retrieval	Improve contextual matching
 🔢 Embeddings	Enable similarity-based retrieval
@@ -486,26 +501,26 @@ Planned Enhancement	Goal
 📊 Retrieval Evaluation	Measure retrieval quality
 🔬 LangSmith Observability	Advanced tracing
 🔐 Authentication	Secure user access
+<br>
 <div align="center">
-
 ✦ SKILLS DEMONSTRATED
-</div> <p align="center">
+<br>
 
 Python · FastAPI · RAG · LLMs · LangChain · LangGraph
-<br>
+
 Prompt Engineering · PDF Processing · REST APIs
-<br>
+
 Cloud Deployment · Vercel Blob · AI Application Architecture
 
-</p>
+</div> <br>
 <div align="center">
 ✦ DEVELOPER
 <br> <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=700&size=27&duration=2600&pause=1000&color=7A4E35&center=true&vCenter=true&width=650&height=55&lines=Developed+by+Hania+Eman" alt="Developer" /> <br> <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=17&duration=2400&pause=900&color=A56F52&center=true&vCenter=true&width=650&height=40&lines=AI+%26+Data+Science+Student;ML+Developer+%7C+Python+Enthusiast" alt="Developer Role" />
 
 <br><br>
 
-<a href="https://github.com/haniaeman2026-pixel"> <img src="https://img.shields.io/badge/GitHub-Hania%20Eman-2F211B?style=for-the-badge&logo=github&logoColor=white" /> </a> </div>
-<div align="center"> <br> <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=600&size=22&duration=2600&pause=900&color=7A4E35&center=true&vCenter=true&width=750&height=45&lines=Research+Smarter.+Understand+Faster.;Built+for+Research-Focused+AI+Workflows." alt="Closing Animation" />
+<a href="https://github.com/haniaeman2026-pixel"> <img src="https://img.shields.io/badge/GitHub-Hania%20Eman-2F211B?style=for-the-badge&logo=github&logoColor=white" /> </a> </div> <br>
+<div align="center"> <img src="https://readme-typing-svg.demolab.com?font=Georgia&weight=600&size=22&duration=2600&pause=900&color=7A4E35&center=true&vCenter=true&width=750&height=45&lines=Research+Smarter.+Understand+Faster.;Built+for+Research-Focused+AI+Workflows." alt="Closing Animation" />
 
 <br><br>
 
@@ -522,4 +537,3 @@ Developed by Hania Eman
 <br><br>
 
 </div> ```
-
